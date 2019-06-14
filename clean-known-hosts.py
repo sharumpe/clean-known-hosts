@@ -22,7 +22,7 @@ def main(argv):
             # Break it into parts, and take the last one.
             addr = line.split(' ')[0].split(',')[-1]
             if (testAddress(addr)):
-                print(line) 
+                print(line.rstrip()) 
 
 def testAddress(address):
     try:
